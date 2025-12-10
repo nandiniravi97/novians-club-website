@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>First Website</title>
+
+    <!-- watch the file-name case here -->
+    <link rel="stylesheet" href="OurWebsite.css">
+
+    <style>
+      img {
+        width: 300px;
+        height: 400px;
+        border: 3px dodgerblue solid;
+        border-radius: 40px;
+      }
+
+      /* single card */
+      .Bag {
+        border: 3px dodgerblue solid;
+        border-radius: 40px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      /* container holding all cards in a row */
+      .car {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        transition: all 0.5s ease-in-out;
+      }
+      .car:hover .Bag{
+        transform: scale(0.8);
+      }
+      .car .Bag:hover{
+        transform: scale(0.9) rotate(5deg);
+        background-color: dodgerblue;
+        border: 3px solid black;
+    }
+         header{
+            background-color: dodgerblue;
+            font-size: 70px;
+            color: white;
+            text-align: center;
+         }
+         footer{
+            background-color: dodgerblue;
+            font-size: 70px;
+         }
+      header,
+      footer {
+        text-align: center;
+        margin: 20px 0;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>Novians Club</header>
+
+    <!-- ONE .car that contains all cards -->
+    <div class="car">
+      <div class="Bag">
+        <h1>Category</h1>
+        <img src="image 2.jpg" alt="main image">
+        <h1>Student</h1>
+      </div>
+
+      <div class="Bag">
+        <h1>Category</h1>
+        <img src="image 2.jpg" alt="main image">
+        <h1>Student</h1>
+      </div>
+
+      <div class="Bag">
+        <h1>Category</h1>
+        <img src="image 2.jpg" alt="main image">
+        <h1>Student</h1>
+      </div>
+
+      <div class="Bag">
+        <h1>Category</h1>
+        <img src="image 2.jpg" alt="main image">
+        <h1>Student</h1>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <footer>success@novians.com</footer>
+  </body>
+</html>
